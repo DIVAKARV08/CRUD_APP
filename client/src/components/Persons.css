@@ -1,0 +1,38 @@
+.personList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 30px;
+  border: 1px dotted black;
+}
+
+.personList > ul {
+  list-style: none;
+  width: 40%;
+}
+.personList > ul > li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 14px;
+}
+.personList > ul > li > div > span {
+  font-weight: bolder;
+}
+
+.personList > ul > li:hover {
+  background-color: #ddd;
+}
+.icons{
+  display: flex;
+}
+.editIcon , .deleteIcon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.personList > ul > li:nth-child(odd){
+    background-color: #f9f9f9;
+}
+
